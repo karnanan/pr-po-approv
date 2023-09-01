@@ -36,6 +36,7 @@ const POTable = ({ PODetails }: POProps) => {
                             <th>เลขที่เอกสาร</th>
                             <th>แผนกที่ขอซื้อ</th>
                             <th>ราคาสุทธิ</th>
+                            <th>สถานะ</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,11 +49,9 @@ const POTable = ({ PODetails }: POProps) => {
                                     <td>{PODetail.id}</td>
                                     <td>{PODetail.department}</td>
                                     <td>{PODetail.price}</td>
-                                    {/* <td>{projectDetail.dueDate}</td>
                                     <td>
-                                        <Badge bg={projectDetail.variant}>{projectDetail.status}</Badge>
+                                        <Badge bg={PODetail.variant}>{PODetail.status}</Badge>
                                     </td>
-                                    <td>{projectDetail.clients}</td> */}
                                 </tr>
                             );
                         })}
